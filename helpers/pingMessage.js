@@ -175,6 +175,31 @@ function get(ping, context) {
         "the fire and the ice collided with each other and now i'm dead",
         "NO ONE YES PING",
         "ping-spin triple",
+        "was that fast? i blinked and missed it",
+        "do bots dream of electric pings?",
+        "i’d apologize for the delay, but i don’t feel guilt. i’m a bot",
+        "you ever just... ping?",
+        "if this were a race, i wouldn’t be winning",
+        "fun fact: this message contains exactly one ping",
+        "this is your sign to /ping again",
+        "have you considered that maybe the ping is trying its best?",
+        "wait hold on let me check my... oh wait, nevermind, here you go",
+        "i'm not sure if this ping is fast or if you're just really patient",
+        "ping generated successfully! emotional damage pending.",
+        "my last braincell just processed that ping",
+        "warning: ping may contain traces of nuts",
+        "i was buffering... emotionally",
+        "some pings are born great, others have greatness /pinged upon them",
+        "pinging you softly, with this pong",
+        "if pings could talk, they'd probably be like 'ow'",
+        "you want another ping? say the magic word. (it's /ping)",
+        "i've run the numbers and... yeah it's a ping",
+        "i accidentally sent this through australia. oops",
+        "statistics show this is one of the ping messages ever",
+        "wait is this one of the funny ones? i forgot to check",
+        "ping responsibly",
+        "it's not a bug, it's a ping feature",
+        "brb reinventing the concept of latency",
     ]
 
     if (context.score) {
@@ -217,6 +242,16 @@ function get(ping, context) {
         `four hours later...`,
         `it hurts it hurts it hurts`,
         `uguuuu`,
+        `quick! someone call tech support!`,
+        `this ping just got run over by a data truck`,
+        `you could toast bread faster than this`,
+        `my ones and zeroes are crying`,
+        `ping.exe has stopped responding`,
+        `404: fast ping not found`,
+        `i tried to ping but it tripped over a wire`,
+        `is... is the internet okay?`,
+        `packet delivery expected between 3-5 business days`,
+        `the ping dimension is unstable`,
     ]
 
     // 15% chance to get a regular flavored ping message, so it's not super uncommon
@@ -229,6 +264,8 @@ function get(ping, context) {
     if (Math.random()*1000 <= 1) {
         messagesList = [
             "this one is rare. like, really rare. like, 0.1% chance rare. feel proud of yourself",
+            "legend says only one in a thousand sees this message. congrats, chosen one",
+            "you’ve unlocked the secret one in a thousand ping! there is no reward, just the bragging rights",
         ]
     }
 
@@ -241,6 +278,11 @@ function get(ping, context) {
             `[SUPER PING ACTIVATED]`,
             `did you know? that blue button will disappear if you don't click it`,
             `whoa! check it out! a blue thingymabob`,
+            "what the blue?!",
+            "ping just went ultra instinct",
+            "limited edition ping moment detected",
+            "you found the easter egg! kind of",
+            "wow, this one's got sparkles",
         ]
     }
 
@@ -268,6 +310,11 @@ function get(ping, context) {
             "ping? what's a ping? where am i? what's happening?",
             "pingn't",
             "i don't think this is supposed to happen",
+            "ping undefined. welcome to the void",
+            "this ping went on vacation and never came back",
+            "who needs time when you have mystery?",
+            "404: ping is a philosophical construct now",
+            "ping entered the quantum realm",
         ]
     }
 
