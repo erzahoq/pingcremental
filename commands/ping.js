@@ -193,7 +193,7 @@ you have a lot of pts... why don't you go spend them over in </upgrade:136037740
         await interaction.update({
             content:
                 `${pingMessage}
-\`${playerProfile.score} pts\` (**\`+${score}\`**)\n-# ${addDisplay.join(', ')}${multDisplay.length !== 0 ? "," : ""} ${multDisplay.join(', ')}`,
+\`${formatNumber(playerProfile.score)} pts\` (**\`+${formatNumber(score)}\`**)\n-# ${addDisplay.join(', ')}${multDisplay.length !== 0 ? "," : ""} ${multDisplay.join(', ')}`,
             components: [row]
         });
     } catch (error) {
@@ -208,4 +208,9 @@ you have a lot of pts... why don't you go spend them over in </upgrade:136037740
             throw error; // rethrow if not automod 
         }
     }
+}
+
+function formatNumber(num) { //i'd never steal existing code
+    const numStr = num.toString();
+    return numStr.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }

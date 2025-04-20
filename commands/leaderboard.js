@@ -43,7 +43,7 @@ async function getMessage(interaction) {
         const puser = await interaction.client.users.fetch(player.userId)
         description += 
 `
-${leaderboardEmojis[Math.min(leaderboardEmojis.length, player.position)-1]} **${puser.username.replaceAll("_","\\_")}** - \`${player.score} pts\` total`
+${leaderboardEmojis[Math.min(leaderboardEmojis.length, player.position)-1]} **${puser.username.replaceAll("_","\\_")}** - \`${formatNumber(player.score)} pts\` total`
     }
 
     const embed = new EmbedBuilder()
@@ -61,4 +61,9 @@ ${leaderboardEmojis[Math.min(leaderboardEmojis.length, player.position)-1]} **${
         embeds: [embed],
         components: [row]
     }
+}
+
+function formatNumber(num) { //i'd never steal existing code
+    const numStr = num.toString();
+    return numStr.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
