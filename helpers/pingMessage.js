@@ -545,7 +545,7 @@ function get(ping, context) {
             "bot restarted. ping still recalculating existence",
             "the bot has returned from the abyss. hello again.",
             "ping undefined. consciousness achieved.",
-            "after a brief existential crisis, the bot is back",
+            "after a brief existential crisis, i'm back, kinda",
             "ping is searching for purpose after restart",
             "just woke up from maintenance mode. what year is it?",
             "restart successful. ping still unknown.",
