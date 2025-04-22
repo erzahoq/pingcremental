@@ -201,8 +201,8 @@ function get(ping, context) {
         "did you know? this is my current ping:",
         "ping pong? more like... more like ping wrong",
         "just another friendly neighborhood ping",
-        "thanks for waiting! or... not waiting. either way.",
-        "this ping may contain small parts. not for children under 3.",
+        "thanks for waiting! or... not waiting. either way",
+        "this ping may contain small parts. not for children under 3",
         "hello? yes, this is ping. pong is busy right now",
         "did you know: pings can jump up to 3 feet in the wild (source: trust me bro)",
         "you pinged me... now what?",
@@ -221,7 +221,7 @@ function get(ping, context) {
         `thats a few pings!`,
         "pingn't. wait, nope",
         'you just pinged. pung?',
-        "shoutout to foxes!", //idk if you want to make that gay foxgirls but
+        "shoutout to gay foxgirls!", //idk if you want to make that gay foxgirls but
         "hey, its not a 404.",
         "this ping message was brought to you by... uh, me. hi.",
         "just a humble ping doing its best.",
@@ -241,21 +241,19 @@ function get(ping, context) {
         "this response brought to you by the same bot who sends all the other ones.",
         "warning: this ping message may contain self-awareness.",
         "this is technically content.",
-        "fun fact: i thought about making this message cooler, but i didn't.",
-        `this message was handcrafted by my ${ping} braincells.`,
-        "i put this message together at the last second. nailed it.",
-        "no one asked for this ping message, but here it is.",
+        "fun fact: i thought about making this message cooler, but i didn't",
+        `this message was handcrafted by my ${ping} braincells`,
+        "i put this message together at the last second. nailed it",
+        "no one asked for this ping message, but here it is",
         "boop",
-        "back already? here's another ping.",
+        "back already? here's another ping",
         "you should check out our </ping:1360377407109861647> command at some point",
 
         //ok, these next ones are kinda weird but they're fun, so here
         ping < 30 ? "whoa, that's fast! zoom zoom!" : 
         ping < 50 ? "solid ping. not bad, not bad." : 
         ping < 80 ? "acceptable ping levels achieved." : 
-        ping < 150 ? "could be worse, honestly." : 
-        ping < 300 ? "okay so like... it's trying its best." : 
-        "this ping is moving at glacial speed. but hey, it got here.",
+        "could be worse, honestly.",
 
         "good vibe pings only.",
         "ping has arrived safely.",
@@ -421,6 +419,8 @@ function get(ping, context) {
         `ping is out for lunch. back soon?`,
         `by the time this ping finishes, Stardew crops will have regrown`,
         `warning: ping is thinking about life choices`,
+        ping>=300?`ping is moving at glacial speeds, but it got here`:`okay, so like, its trying its best`,
+        
     ]
 
     // 15% chance to get a regular flavored ping message, so it's not super uncommon
