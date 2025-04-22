@@ -549,7 +549,7 @@ function get(ping, context) {
             "ping is searching for purpose after restart",
             "just woke up from maintenance mode. what year is it?",
             "restart successful. ping still unknown.",
-            "ping value: ??? — the bot is confused and so am i",
+            "the ping is confused and so am i",
             "the ping wandered off during the reboot. typical.",
             "rebooted, refreshed, still laggy",
             "ping momentarily became one with the universe",
